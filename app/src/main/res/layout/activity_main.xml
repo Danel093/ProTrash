@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E100E"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="384dp"
+        android:layout_height="347dp"
+        android:layout_marginBottom="132dp"
+        android:background="#0E100E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="13dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="#0E100E"
+            android:shadowColor="#EF2525"
+            android:text="INFÓRMATE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:foreground="@drawable/falta_de_agua"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:foreground="@drawable/calentamiento"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:foreground="@drawable/reutilizar"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:foreground="@drawable/separacion"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="68dp"
+        android:layout_height="85dp"
+        android:backgroundTint="#1E1E1E"
+        android:rotation="270"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="776dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#1E1E1E"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="783dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#1E1E1E"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="783dp" />
+
+    <FrameLayout
+        android:id="@+id/iv_auto_image_slider"
+        android:layout_width="388dp"
+        android:layout_height="303dp"
+        android:layout_marginBottom="500dp"
+        android:background="#383939"
+        app:iss_auto_cycle="true"
+        app:iss_corner_radius="20"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_title_background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/bg_overlay"
+        tools:layout_editor_absoluteX="11dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="NEWS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="166dp"
+            android:layout_height="129dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="65dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="120dp"
+            android:focusable="auto"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="65dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:focusable="auto"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="81dp"
+            android:layout_height="167dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="90dp"
+            android:focusable="auto"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="81dp"
+            android:layout_height="167dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="90dp"
+            android:focusable="auto"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="140dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:focusable="auto"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#1E1E1E"
+        app:srcCompat="@android:drawable/ic_popup_reminder"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="783dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0E100E"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
