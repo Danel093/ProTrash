@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,7 +8,8 @@
     android:layout_height="match_parent"
     android:background="#0E100E"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -131,8 +133,8 @@
                 android:src="@drawable/periodico_ambiental" />
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:layout_height="83dp"
                 android:layout_row="0"
                 android:layout_column="1"
                 android:layout_columnWeight="1"
@@ -146,10 +148,10 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:foregroundTint="#F6F5F5"
-            android:text="NOTICIAS"
+            android:text="@string/noticias"
             android:textAlignment="center"
             android:textColor="#F4F4F4"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
@@ -157,14 +159,20 @@
     <GridLayout
         android:layout_width="376dp"
         android:layout_height="256dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
         android:columnCount="2"
         android:orientation="horizontal"
         android:padding="8dp"
         android:rowCount="2"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="370dp">
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -183,20 +191,6 @@
             android:layout_column="1"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/calentamiento" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="21dp"
-            android:layout_height="28dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:background="#00FFFFFF"
-            android:rotationY="180"
-            android:textColorLink="#030913"
-            android:translationX="3dp"
-            app:icon="@android:drawable/ic_input_add"
-            app:iconGravity="top"
-            app:iconSize="10dp" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -217,7 +211,7 @@
             app:srcCompat="@drawable/separacion" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn1"
             android:layout_width="21dp"
             android:layout_height="28dp"
             android:layout_row="0"
@@ -232,7 +226,7 @@
             app:iconTint="#FEF1FF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn2"
             android:layout_width="21dp"
             android:layout_height="28dp"
             android:layout_row="0"
@@ -247,7 +241,7 @@
             app:iconTint="#FEF1FF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn3"
             android:layout_width="21dp"
             android:layout_height="28dp"
             android:layout_row="1"
@@ -262,7 +256,7 @@
             app:iconTint="#FEF1FF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn4"
             android:layout_width="21dp"
             android:layout_height="28dp"
             android:layout_row="1"
@@ -283,10 +277,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:text="INFÓRMATE"
+        android:text="@string/inf_rmate"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="332dp" />

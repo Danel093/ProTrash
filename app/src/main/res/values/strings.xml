@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name" translatable="false">ProTrash</string>
-    <string name="char_2">INFÓRMATE</string>
-    <string name="noticias">NOTICIAS</string>
     <string name="todo">TODO</string>
+    <string name="inf_rmate">INFÓRMATE</string>
+    <string name="noticias">NOTICIAS</string>
+
+    <!--Main activity-->
+    <string name="Btn_Login">Login</string>
+    <string name="Btn_Registro">Registrar Usuario</string>
+
+    <!--Main activity-->
+    <string name="CrearCuentaTXT">Crear Una Cuenta</string>
+    <string name="NombreEt">Nombres</string>
+    <string name="CorreoEt">Correo Electrónico</string>
+    <string name="ContraseñaEt">Contraseña</string>
+    <string name="ConfirmaContraseñaEt">Confirmar Contraseña</string>
+    <string name="RegistrarUsuario">REGISTRARSE</string>
+    <string name="TengounacuentaTXT">Tengo Una Cuenta</string>
+
 </resources>
